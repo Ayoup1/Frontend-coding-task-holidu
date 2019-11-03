@@ -1,0 +1,17 @@
+.card-listing-bid {
+	flex: 1;
+	padding: 0 0;
+	display: block;
+	background-color: #f8f8f8;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	.card-listing-bid-inner {
+		display: flex;
+		align-items: center;
+		padding: 18px 32px;
+		.button {
+			margin-left: auto;
+		}
+	}
+}
