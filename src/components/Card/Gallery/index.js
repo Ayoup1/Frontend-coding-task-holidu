@@ -1,19 +1,16 @@
 import React, { useState } from "react";
 
 import GalleryToggle from "./GalleryToggle";
-import "./styles.scss";
 import ContentLoader from "react-content-loader";
-
+import "./styles.scss";
 function Gallery(props) {
 	const [activeItem, setActiveItem] = useState(0);
-
+	let nbr = props.photos ? props.photos.length : 0;
 	function rotateRight() {
-		let nbr = props.photos.length;
 		setActiveItem((((activeItem + 1) % nbr) + nbr) % nbr);
 	}
 
 	function rotateLeft() {
-		let nbr = props.photos.length;
 		setActiveItem((((activeItem - 1) % nbr) + nbr) % nbr);
 	}
 

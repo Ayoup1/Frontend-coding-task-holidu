@@ -1,8 +1,7 @@
 import React from "react";
-
-import "./styles.scss";
 import LocationIcon from "mdi-react/LocationIcon";
 import ContentLoader from "react-content-loader";
+import "./styles.scss";
 export default function Details({
 	title,
 	location,

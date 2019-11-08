@@ -1,10 +1,8 @@
 import React from "react";
 
-import "./styles.scss";
-
 import Right from "mdi-react/ChevronRightIcon";
 import Left from "mdi-react/ChevronLeftIcon";
-
+import "./styles.scss";
 function GalleryToggle(props) {
 	let { icon, action, left, right } = props;
 

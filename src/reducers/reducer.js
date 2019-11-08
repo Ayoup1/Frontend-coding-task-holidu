@@ -1,5 +1,5 @@
 import * as actionTypes from "../actions/types";
-
+import { formatProperties } from "../utils";
 export const initialState = {
 	apartments: [],
 	totalCount: 0,
@@ -14,7 +14,7 @@ export const reducer = (state = initialState, action) => {
 		case actionTypes.SET_PROPERTIES_DATA:
 			return {
 				...state,
-				apartments: action.apartments,
+				apartments: formatProperties(action.apartments),
 				totalCount: action.totalCount || 0,
 				pageSize:
 					action.apartments && action.apartments.length > 0
